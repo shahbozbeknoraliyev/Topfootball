@@ -1,0 +1,43 @@
+{%extends "header.html"%}
+    {%block content%}
+      <div class="country-clubs">
+        <h2 id="title">Clubs by country</h2>
+        <div class="country">
+          <div>
+            <h3><a href="../countries/england.html">England</a> <br></h3>
+            <h3><a href="../countries/italy.html">italy</a> <br></h3>
+            <h3><a href="../countries/france.html">France</a> <br></h3>
+            <h3><a href="../countries/netherlands.html">Netherlands</a> <br></h3>
+            <h3><a href="../countries/ukraine.html">Ukraine</a> <br></h3>
+            <h3><a href="../countries/argentina.html">Argentina</a> <br></h3>
+          </div>
+          <div>
+            <h3><a href="../countries/spain.html">Spain</a> <br></h3>
+            <h3><a href="../countries/germany.html">Germany</a> <br></h3>
+            <h3><a href="../countries/portugal.html">Portugal</a> <br></h3>
+            <h3><a href="../countries/brazil.html">Brazil</a> <br></h3>
+            <h3><a href="../countries/russia.html">Russia</a> <br></h3>
+            <h3><a href="../countries/other.html">Other</a> <br></h3>
+          </div>
+        </div>
+        <hr>
+        <h2><a href="#">Transfers archive</a></h2>
+      </div>
+      <div class="nav">
+        <h2>– TRANSFERS ARCHIVE –</h2>
+        <table class="content-nav"></table>
+      </div>
+      <div class="content">
+        <div class="stats">
+          {%for i in transfer%}
+          <div>
+            <a href="./2017-18season.html">Season {{i.mavsum}}</a>
+          </div>
+          {%endfor%}
+
+          <div>
+            <a href="../latest-transfers.html">Latest-transfers</a>
+          </div>
+        </div>
+      </div>
+      {%endblock%}

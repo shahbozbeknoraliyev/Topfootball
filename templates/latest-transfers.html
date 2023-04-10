@@ -1,0 +1,41 @@
+{%extends "header.html"%}
+    {%block content%}
+      <div class="nav">
+          <h2>– LATEST TRANSFERS –</h2>
+          <table class="content-nav">
+            <thead>
+              <tr>
+                <td>#player</td>
+                <td>from</td>
+                <td>to</td>
+                <td>
+                  transfer fee, <br />
+                  mill. euro
+                </td>
+                <td>
+                  transfer fee, <br />
+                  mill. euro, <br />
+                  by tft.com
+                </td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      <div class="latest-transfers">
+        
+        <table class="players">
+          {%for i in trans%}
+          <tr>
+            <td>1 {{i.player}}</td>
+            <td>{{i.eski}}</td>
+            <td>{{i.yangi}}</td>
+            <td>{{i.narx}}</td>
+            <td>{{i.tax_narx}}</td>
+          </tr>
+          {%endfor%}
+          </tr>
+        </table>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta sequi quia eos cupiditate rerum accusantium odit enim, expedita, architecto error dignissimos voluptatibus. Nisi illo, maiores fugit amet neque eveniet!</p>
+      </div>
+  {%endblock%}

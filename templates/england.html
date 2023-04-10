@@ -1,0 +1,21 @@
+{%extends "header.html"%}
+    {%block content%}
+
+      <div class="nav">
+        <h2>– {{i.davlat}} –</h2>
+        <table class="content-nav"></table>
+      </div>
+      {%for i in davlat%}
+      <div class="content" style="margin-top: 170px ;">
+        <div class="clubs">
+          <div class="club">
+            <a href="../country-clubs.html">
+              <img src="../img/manchester.logo.png" alt="" />
+              {{i.nom}}
+            </a>
+          </div>
+          {%endfor%}
+
+        </div>
+      </div>
+  {%endblock%}
